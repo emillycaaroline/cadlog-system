@@ -28,7 +28,11 @@
                 <option value="colaborador">Colaborador</option>
             </select>
 
+            <button type="submit">Cadastrar</button>
+
         </form>
+
+        <a href="">Voltar ao login</a>
     </div>
 
 </body>
