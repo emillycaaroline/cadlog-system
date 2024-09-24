@@ -4,7 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Entrar</title>
+    <style>
+        button {
+            background-color: rgb(190, 122, 253);
+            border-radius: 5px;
+            font-size: medium;
+        }
+
+        body {
+            text-align: center;
+
+        }
+
+        input {
+            border-radius: 5px;
+        }
+        a{
+            color: purple;
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -12,8 +34,10 @@
     <!-- Os dados serão enviados para 'index.php' com a ação 'login' -->
     <main>
         <form method="post" action="index.php?action=login">
-            <input type="email" name="email" placeholder="Email" required><br>
-            <input type="password" name="senha" placeholder="Senha" required><br>
+            <label for="email">email</label><br>
+            <input type="email" name="email" placeholder="Email" required><br><br>
+            <label for="senha">Senha</label><br>
+            <input type="password" name="senha" placeholder="Senha" required><br><br>
             <button type="submit">Login</button>
         </form>
         <!-- Define o destino do link e leva à opção de cadastro -->
