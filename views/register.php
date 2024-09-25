@@ -15,7 +15,7 @@
             font-size: large;
             color: white;
         }
-
+  
         body {
             text-align: center;
             margin-top: 150px;
