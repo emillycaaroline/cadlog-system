@@ -10,7 +10,10 @@ class  AuthController
     {
         // Verifica se a requisisção HTTP é do tipo POST, ou seja, se o formulário foi enviado
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
+            $email = $_POST['email'];
+            $senha = $_POST['senha'];
 
+            $user = User::findByEmail($email);
         }
     }
 }
