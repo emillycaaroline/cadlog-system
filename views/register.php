@@ -29,7 +29,7 @@
         a {
             color: purple;
         }
-
+  
         select {
             border-radius: 5px;
         }
