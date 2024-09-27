@@ -106,6 +106,13 @@
         a:hover {
             color: black;
         }
+
+        h2{
+            text-align: center;
+            font-size: x-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
     </style>
 
 </head>

@@ -83,6 +83,13 @@
         a:hover {
             color: black;
         }
+
+        h2{
+            text-align: center;
+            font-size: x-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
     </style>
 
 
@@ -92,6 +99,7 @@
     <!-- O formulário usa o método POST para enviar dados de forma segura -->
     <!-- Os dados serão enviados para 'index.php' com a ação 'login' -->
     <main>
+    <h2>Login</h2>
         <form method="post" action="index.php?action=login">
             <label for="email">email:</label><br><br>
             <input type="email" name="email" placeholder="Email" required><br><br>
