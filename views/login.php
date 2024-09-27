@@ -74,13 +74,13 @@ a {
     display: block;
     margin-top: 20px;
     color: #a564e9;
-    transition: color 0.3s;
+    transition: color 0.5s;
     text-align: center;
 }
 
 /* Mudando a cor do link qnd passar o mouse */
 a:hover {
-    color: #400a80;
+    color: black;
 }
 
     </style>

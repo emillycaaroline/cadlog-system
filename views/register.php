@@ -80,7 +80,7 @@ a {
 
 /* Mudando a cor do link qnd passar o mouse */
 a:hover {
-    color: #400a80;
+    color: black;
 }
     </style>
 
