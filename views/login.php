@@ -14,7 +14,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: rgb(174, 68, 217);
+            background: rgb(174, 68, 217);  /* fundo em degradê */
             background: linear-gradient(0deg, rgba(174, 68, 217, 1) 0%, rgba(233, 177, 255, 1) 100%);
         }
 
