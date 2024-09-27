@@ -14,6 +14,7 @@ class UserController
             ];
 
             User::create($data);
+            header('location: index.php');
         } else {
             // Se a requisição não for POST (por exemplo se for GET), carrega a pagina de resgistro.
             include 'views/register.php';

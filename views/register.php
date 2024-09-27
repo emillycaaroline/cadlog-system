@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-       
+
 /* corpo da pagina */
 body {
     display: flex;
@@ -35,7 +35,7 @@ label {
 }
 
 /* Inputs (Campos para escrever) */
-input {
+input{
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -44,10 +44,36 @@ input {
     font-size: medium;
 }
 
+/* Campo de selecionar */
+select{
+   
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: medium;
+    text-align: center;
+    
+    
+} 
+
+/* muda cor qnd clica em select */
+select:focus {
+    border-color: #be7afd;
+    outline: none;
+    box-shadow: 0 0 5px #be7afd;  /* Adiciona um efeito de sombra roxa ao focar */
+}
+
+
+
+option{
+  
+}
+
 /* Muda borda do input ao apertar */
 input:focus {
     border-color: #be7afd;
     outline: none;
+    box-shadow: 0 0 5px #be7afd;  /* Adiciona um efeito de sombra roxa ao focar */
 }
  
 /* botão */
@@ -91,16 +117,16 @@ a:hover {
     <div>
         <h2>Cadastro de Usuário</h2>
         <form action="" method="post">
-            <label for="nome">Nome</label>
+            <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome" required><br>
 
-            <label for="email">Email</label>
+            <label for="email">Email:</label>
             <input type="email" name="email" id="email" required><br>
 
-            <label for="senha">Senha</label>
+            <label for="senha">Senha:</label>
             <input type="password" name="senha" id="senha" required><br><br>
 
-            <label for="perfil">Perfil:</label>
+            <label for="perfil">Perfil:</label><br>
             <select name="perfil" id="perfil">
                 <option value="admin">Admin</option>
                 <option value="gestor">Gestor</option>
