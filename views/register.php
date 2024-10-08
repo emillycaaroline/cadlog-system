@@ -107,12 +107,11 @@
             color: black;
         }
 
-        h2{
+        h2 {
             text-align: center;
             font-size: x-large;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
-
     </style>
 
 </head>
@@ -121,7 +120,7 @@
 
     <div>
         <h2>Cadastro de Usuário</h2>
-        <form action="" method="post">
+        <form action="index.php?action=register" method="post">
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome" required><br>
 
@@ -142,7 +141,7 @@
 
         </form>
 
-        <a href="">Voltar ao login</a>
+        <a href="index.php?action=login">Voltar ao login</a>
     </div>
 
 </body>
