@@ -1,4 +1,3 @@
-
  
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -25,11 +24,12 @@
             </thead>
             <tbody>
  
+            <?php foreach($user as $user): ?>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><?= $user['id'] ?></td>
+                    <td><?= $user['nome'] ?></td>
+                    <td><?= $user['email'] ?></td>
+                    <td><?= $user['perfil'] ?></td>
                     <td></td>
                 </tr>
  
@@ -42,3 +42,4 @@
  
 </html>
  
+
