@@ -23,7 +23,7 @@
              </thead>
              <tbody>
 
-                 <?php foreach ($user as $user) : ?>
+                 <?php foreach ($users as $user) : ?>
                      <tr>
                          <td><?= $user['id'] ?></td>
                          <td><?= $user['nome'] ?></td>
