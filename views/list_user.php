@@ -1,53 +1,64 @@
- <!DOCTYPE html>
- <html lang="pt-br">
+ <?php
+    session_start();
 
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Lista de Usuários</title>
-     <link rel="stylesheet" type='text/css' media='screen' href="css/list.css"> <!-- Link para o arquivo CSS -->
- </head>
+    if (isset($_SESSION['perfil'])) :
+    ?>
+     <!DOCTYPE html>
+     <html lang="pt-br">
 
- <body class=""> <!-- Define a classe com base no perfil do usuário -->
-     <div class="container">
-         <h2>Lista de Usuários</h2>
-         <table class="styled-table">
-             <thead>
-                 <tr>
-                     <th>ID</th>
-                     <th>Nome</th>
-                     <th>Email</th>
-                     <th>Perfil</th>
-                     <th>Ações</th>
-                 </tr>
-             </thead>
-             <tbody>
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Lista de Usuários</title>
+         <link rel="stylesheet" type='text/css' media='screen' href="css/list.css"> <!-- Link para o arquivo CSS -->
+     </head>
 
-                 <?php foreach ($users as $user) : ?>
+     <body class=""> <!-- Define a classe com base no perfil do usuário -->
+         <div class="container">
+             <h2>Lista de Usuários</h2>
+             <table class="styled-table">
+                 <thead>
                      <tr>
-                         <td><?= $user['id'] ?></td>
-                         <td><?= $user['nome'] ?></td>
-                         <td><?= $user['email'] ?></td>
-                         <td><?= $user['perfil'] ?></td>
-                         <td>
-                             <!-- veifica se o perfil é admin ou gestor para poder adicionar ou não o botão editar -->
-                             <?php if ($_SESSION['perfil'] == 'admin' || $_SESSION['perfil'] == 'gestor') : ?>
-                                 <a href="">Editar</a>
-                             <?php endif; ?>
-
-                             <!-- insere o botão de exclusão apenas para o perfil admin -->
-                             <?php if ($_SESSION['perfil'] == 'admin') : ?>
-                                 <a href="">Excluir</a>
-
-                             <?php endif; ?>
-                         </td>
+                         <th>ID</th>
+                         <th>Nome</th>
+                         <th>Email</th>
+                         <th>Perfil</th>
+                         <th>Ações</th>
                      </tr>
-                 <?php endforeach; ?>
-             </tbody>
-         </table>
+                 </thead>
+                 <tbody>
 
-         <a href="index.php?action=dashboard" class="btn">Voltar ao Dashboard</a>
-     </div>
- </body>
+                     <?php foreach ($users as $user) : ?>
+                         <tr>
+                             <td><?= $user['id'] ?></td>
+                             <td><?= $user['nome'] ?></td>
+                             <td><?= $user['email'] ?></td>
+                             <td><?= $user['perfil'] ?></td>
+                             <td>
+                                 <!-- veifica se o perfil é admin ou gestor para poder adicionar ou não o botão editar -->
+                                 <?php if ($_SESSION['perfil'] == 'admin' || $_SESSION['perfil'] == 'gestor') : ?>
+                                     <a href="">Editar</a>
+                                 <?php endif; ?>
 
- </html>
+                                 <!-- insere o botão de exclusão apenas para o perfil admin -->
+                                 <?php if ($_SESSION['perfil'] == 'admin') : ?>
+                                     <a href="">Excluir</a>
+
+                                 <?php endif; ?>
+                             </td>
+                         </tr>
+                     <?php endforeach; ?>
+                 </tbody>
+             </table>
+
+             <a href="index.php?action=dashboard" class="btn">Voltar ao Dashboard</a>
+         </div>
+     </body>
+
+     </html>
+
+ <?php else: ?>
+
+     <p> Erro: Você não tem permissão para vizualizar essa página.</p>
+
+ <?php endif; ?>
