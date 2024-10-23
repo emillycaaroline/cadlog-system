@@ -148,7 +148,8 @@ if (isset($_SESSION['perfil'])) :
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
-                background: linear-gradient(135deg, #ff4b2b, #ff416c);
+                background: rgb(138, 112, 170);
+                background: linear-gradient(0deg, rgba(138, 112, 170, 1) 0%, rgba(213, 141, 255, 1) 100%);
                 font-family: Arial, sans-serif;
                 margin: 0;
             }
@@ -157,7 +158,7 @@ if (isset($_SESSION['perfil'])) :
                 background-color: #fff;
                 padding: 40px;
                 border-radius: 10px;
-                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 4px 8px red;
                 text-align: center;
                 max-width: 500px;
             }
