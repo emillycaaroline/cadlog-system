@@ -14,13 +14,15 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: rgb(174, 68, 217);  /* fundo em degradê */
+            background: rgb(174, 68, 217);
+            /* fundo em degradê */
             background: linear-gradient(0deg, rgba(174, 68, 217, 1) 0%, rgba(233, 177, 255, 1) 100%);
         }
 
         /* formulário */
         main {
-            background-color: #fff;
+            background: rgb(255, 255, 255);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.6811099439775911) 0%, rgba(255, 255, 255, 0.773546918767507) 100%);
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -105,12 +107,12 @@
 <body>
     <main>
         <h2>Login</h2>
-        
+
         <!-- Verifica se existe uma mensagem de erro e exibe -->
-        <?php if (!empty($error)): ?>
+        <?php if (!empty($error)) : ?>
             <div class="error-message"><?= $error ?></div>
         <?php endif; ?>
-        
+
         <form method="post" action="index.php?action=login">
             <label for="email">Email:</label><br><br>
             <input type="email" name="email" placeholder="Email" required><br><br>
