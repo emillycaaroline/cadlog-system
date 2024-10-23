@@ -1,8 +1,18 @@
 # cadlog-system
+[Descrição](https://github.com/emillycaaroline/cadlog-system#-descri%C3%A7%C3%A3o)
 
-README
+[Funcionalidades](https://github.com/emillycaaroline/cadlog-system#%EF%B8%8F-funcionalidades)
+- [Admin](https://github.com/emillycaaroline/cadlog-system#admin)
+- [Gestor](https://github.com/emillycaaroline/cadlog-system#gestor)
+- [Colaborador](https://github.com/emillycaaroline/cadlog-system#colaborador)
+- [Banco de dados](https://github.com/emillycaaroline/cadlog-system#-banco-de-dados)
 
-# 🔍 CadastroE
+[Tecnologias utilizadas](https://github.com/emillycaaroline/cadlog-system#%EF%B8%8F-tecnologias-utilizadas)
+
+[Visual do Site](https://github.com/emillycaaroline/cadlog-system#-visual-do-site)
+
+[Desenvolvimento em CSS](https://github.com/emillycaaroline/cadlog-system?tab=readme-ov-file#oque-foi-desenvolvido-em-css)
+
 
 ## 📋 Descrição 
 
@@ -34,12 +44,25 @@ O código para o banco de dados esta na pasta [database.sql](https://github.com/
 
 ## 👀 Visual do Site
 **Tela de Login**  
-Utilizada para usuários que ja possui cadastro, onde só com email e login ja entra  
-<img src="img/TelaLogin.png" alt="Imagem da página inicial do site" width="500"/><br>
+Utilizada para usuários que ja possui cadastro, onde só com email e login ja entra:  
+<img src="img/TelaLogin.png" alt="Imagem da páginade login" width="500"/><br>
  
 **Tela de Cadastro**  
-Ultilizada por usuários que estao entrando pela primeira vez    
-<img src="img/TelaCadastro.png" alt="Imagem da página de cadastro de produto" width="500"/>
+Ultilizada por usuários que estao entrando pela primeira vez:    
+<img src="img/TelaCadastro.png" alt="Imagem da página de cadastro" width="500"/><br>
+
+**Tela Inicial**  
+Essa é a tela inicial do Admin e será parecida para gestor:  
+<img src="img/TelaInicial.png" alt="Imagem da página inicial" width="500"/><br>
+
+**Lista de Usuário**  
+Essa lista de usuário apareça apenas para admin e gestor.  
+<img src="img/ListaUsuario.png" alt="Imagem Lista de Usuário" width="500"/><br>
+
+**Tela de inicio Colaborador**  
+A tela de colaborador não tem nenhuma ação diferente funcional.  
+<img src="img/inicioC.png" alt="Imagem Lista de Usuário" width="500"/><br>
+
 
 
 ## Oque foi desenvolvido em CSS
@@ -50,8 +73,6 @@ Ultilizada por usuários que estao entrando pela primeira vez
 - odas os titulos foram escolhidos tamanho e fonte.
 - A mensagem de erro de senha ou email errado, aparece na própia tela de login.
 
-## Métodos ultilizados no site.
-Em desenvolvimento...
 
 ## Meu git:  
 [<img loading="lazy" src="https://avatars.githubusercontent.com/u/127847857?v=4" width=115><br><sub>Emilly Caroline </sub>](https://github.com/emillycaaroline)<br><br><br>
