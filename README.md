@@ -51,17 +51,17 @@ Utilizada para usuários que ja possui cadastro, onde só com email e login ja e
 Ultilizada por usuários que estao entrando pela primeira vez:    
 <img src="img/TelaCadastro.png" alt="Imagem da página de cadastro" width="500"/><br>
 
-**Tela Inicial**  
+**Tela de inicio Colaborador**  
+A tela de colaborador não tem nenhuma ação diferente funcional.  
+<img src="img/inicioC.png" alt="Imagem Lista de Usuário" width="500"/><br>
+
+**Tela Inicial Admin/Gestor**  
 Essa é a tela inicial do Admin e será parecida para gestor:  
 <img src="img/TelaInicial.png" alt="Imagem da página inicial" width="500"/><br>
 
 **Lista de Usuário**  
 Essa lista de usuário apareça apenas para admin e gestor.  
 <img src="img/ListaUsuario.png" alt="Imagem Lista de Usuário" width="500"/><br>
-
-**Tela de inicio Colaborador**  
-A tela de colaborador não tem nenhuma ação diferente funcional.  
-<img src="img/inicioC.png" alt="Imagem Lista de Usuário" width="500"/><br>
 
 
 
