@@ -11,17 +11,18 @@ Este projeto foi desenvolvido em sala na disciplina de `Programação Web II` no
 ### 🖇️ Funcionalidades:
 Possuem  três tipos de usuários admin, gestor e Colaborador, onde no Cadastro a pessoa terá como selecionar seu tipo de usuário e terá a liberdade de usabilidade do usuário escolhido.
 
+
 ### Admin: 
-Em desenvolvimento...
+Ao entrar na conta de admin o usuário podera vetodos os usuários cadastrados no banco de dados, tambem podera editar e excluir.
 
 ### Gestor:
-Em desenvolvimento...
+O usuário gestor pode apenas vizualizar e editar os usuários cadastrados no banco de dados.
 
 ### Colaborador:
-Em desenvolvimento...
+O colaborador apenas irá apenas cadastrar, não consegue ver os usuários, excluir e nem editar.
 
 ### 📊 Banco de Dados
-Em desenvolvimento...
+O código para o banco de dados esta na pasta [database.sql](https://github.com/emillycaaroline/cadlog-system/blob/main/database.sql) (Funciona apenas no servidor local).
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -47,7 +48,7 @@ Ultilizada por usuários que estao entrando pela primeira vez
 - Campos de texto foram almentados, foi adicionado bordas arredondadas e uma borda e sombra roxa quando clica nele.
 - O botão foi almentado, arredondado e adicionado uma sombra que aparece quando passa o cursor do mause.
 - odas os titulos foram escolhidos tamanho e fonte.
-- Todo o código esta devidamente documentado
+- A mensagem de erro de senha ou email errado, aparece na própia tela de login.
 
 ## Métodos ultilizados no site.
 Em desenvolvimento...
