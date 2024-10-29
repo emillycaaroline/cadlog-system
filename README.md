@@ -29,7 +29,7 @@ Ao entrar na conta de admin o usuário podera vetodos os usuários cadastrados n
 O usuário gestor pode apenas vizualizar e editar os usuários cadastrados no banco de dados.
 
 ### Colaborador:
-O colaborador apenas irá apenas cadastrar, não consegue ver os usuários, excluir e nem editar.
+O colaborador apenas irá apenas se cadastrar, não consegue ver os usuários, excluir e nem editar.
 
 ### 📊 Banco de Dados
 O código para o banco de dados esta na pasta [database.sql](https://github.com/emillycaaroline/cadlog-system/blob/main/database.sql) (Funciona apenas no servidor local).
@@ -52,7 +52,7 @@ Ultilizada por usuários que estao entrando pela primeira vez:
 <img src="img/TelaCadastro.png" alt="Imagem da página de cadastro" width="500"/><br>
 
 **Tela de inicio Colaborador**  
-A tela de colaborador não tem nenhuma ação diferente funcional.  
+A tela de colaborador não tem nenhuma ação diferente funcional:    
 <img src="img/inicioC.png" alt="Imagem Lista de Usuário" width="500"/><br>
 
 **Tela Inicial Admin/Gestor**  
@@ -70,7 +70,7 @@ Essa lista de usuário apareça apenas para admin e gestor.
 - Em `body` foi adicionado um fundo em degradê roxo e todos os itens foram centralizados.
 - Campos de texto foram almentados, foi adicionado bordas arredondadas e uma borda e sombra roxa quando clica nele.
 - O botão foi almentado, arredondado e adicionado uma sombra que aparece quando passa o cursor do mause.
-- odas os titulos foram escolhidos tamanho e fonte.
+- Todas os titulos foram escolhidos tamanho e fonte.
 - A mensagem de erro de senha ou email errado, aparece na própia tela de login.
 
 
