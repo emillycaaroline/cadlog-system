@@ -91,6 +91,17 @@ if (isset($_SESSION['perfil'])) :
             .btn-dashboard:hover {
                 background-color: #4a0072;
             }
+
+            a{
+                
+                color: white;
+                padding: 10px 15px;
+                border-radius: 20px;
+                margin-top: 15px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
         </style>
     </head>
 
@@ -116,11 +127,11 @@ if (isset($_SESSION['perfil'])) :
                             <td><?= $user['perfil'] ?></td>
                             <td>
                                 <?php if ($_SESSION['perfil'] == 'admin' || $_SESSION['perfil'] == 'gestor') : ?>
-                                    <a href="index.php?edit&id=<?= $user['id'] ?>">Editar</a>
+                                    <a style="background-color: #4d3153;" href="index.php?edit&id=<?= $user['id'] ?>">Editar</a>
                                 <?php endif; ?>
 
                                 <?php if ($_SESSION['perfil'] == 'admin') : ?>
-                                    <a href="">Excluir</a>
+                                    <a style="background-color: #df5858;" href="">Excluir</a>
                                 <?php endif; ?>
                             </td>
                         </tr>
