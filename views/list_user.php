@@ -45,6 +45,7 @@ if (isset($_SESSION['perfil'])) :
                 font-size: 16px;
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
                 text-align: left;
+
             }
 
             .styled-table thead tr {
@@ -59,6 +60,7 @@ if (isset($_SESSION['perfil'])) :
                 padding: 12px 15px;
                 border-bottom: 1px solid #dddddd;
                 text-align: left;
+                border-radius: 3px;
             }
 
             .btn {
@@ -72,6 +74,7 @@ if (isset($_SESSION['perfil'])) :
                 cursor: pointer;
                 text-decoration: none;
                 font-size: 16px;
+
             }
 
             .btn:hover {
@@ -92,16 +95,33 @@ if (isset($_SESSION['perfil'])) :
                 background-color: #4a0072;
             }
 
-            a{
-                
+            a {
+
+                padding: 10px;
+                background-color: #be7afd;
                 color: white;
-                padding: 10px 15px;
-                border-radius: 20px;
-                margin-top: 15px;
-                text-decoration: none;
-                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color 0.3s, box-shadow 0.3s;
             }
 
+            /* Efeito sombra qnd passar o mouse no botão */
+            a:hover {
+                background-color: #a564e9;
+                box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            .ed{
+                background-color: #7b30c3;
+                text-decoration: none;
+            }
+
+            .ex{
+              background-color: #c24468;  
+              text-decoration: none;
+            }
         </style>
     </head>
 
@@ -127,11 +147,11 @@ if (isset($_SESSION['perfil'])) :
                             <td><?= $user['perfil'] ?></td>
                             <td>
                                 <?php if ($_SESSION['perfil'] == 'admin' || $_SESSION['perfil'] == 'gestor') : ?>
-                                    <a style="background-color: #4d3153;" href="index.php?edit&id=<?= $user['id'] ?>">Editar</a>
+                                    <a class="ed" href="index.php?edit&id=<?= $user['id'] ?>">Editar</a>
                                 <?php endif; ?>
 
                                 <?php if ($_SESSION['perfil'] == 'admin') : ?>
-                                    <a style="background-color: #df5858;" href="">Excluir</a>
+                                    <a class="ex" href="">Excluir</a>
                                 <?php endif; ?>
                             </td>
                         </tr>
