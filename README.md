@@ -63,6 +63,8 @@ Essa é a tela inicial do Admin e será parecida para gestor:
 Essa lista de usuário apareça apenas para admin e gestor.  
 <img src="img/ListaUsuario.png" alt="Imagem Lista de Usuário" width="500"/><br>
 
+## Funcionalidades
+- Manter a organização com os usuários cadastrados.
 
 
 ## Oque foi desenvolvido em CSS
