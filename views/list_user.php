@@ -147,7 +147,7 @@ if (isset($_SESSION['perfil'])) :
                             <td><?= $user['perfil'] ?></td>
                             <td>
                                 <?php if ($_SESSION['perfil'] == 'admin' || $_SESSION['perfil'] == 'gestor') : ?>
-                                    <a class="ed" href="index.php?edit&id=<?= $user['id'] ?>">Editar</a>
+                                    <a class="ed" href="index.php?action=edit&id=<?= $user['id'] ?>">Editar</a>
                                 <?php endif; ?>
 
                                 <?php if ($_SESSION['perfil'] == 'admin') : ?>
