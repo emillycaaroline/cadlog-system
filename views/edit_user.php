@@ -20,9 +20,8 @@
 
         /* formulário */
         div {
-            background: rgb(255, 255, 255);
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.6811099439775911) 0%, rgba(255, 255, 255, 0.773546918767507) 100%);
-            padding: 40px;
+            background: white;
+          padding: 40px;
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             width: 500px;
@@ -112,6 +111,7 @@
             text-align: center;
             font-size: x-large;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #a564e9;
         }
     </style>
 
