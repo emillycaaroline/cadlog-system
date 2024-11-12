@@ -151,7 +151,7 @@ if (isset($_SESSION['perfil'])) :
                                 <?php endif; ?>
 
                                 <?php if ($_SESSION['perfil'] == 'admin') : ?>
-                                    <a class="ex" href="">Excluir</a>
+                                    <a class="ex" href="index.php?action=delete&id=<?= $user['id'] ?>">Excluir</a>
                                 <?php endif; ?>
                             </td>
                         </tr>

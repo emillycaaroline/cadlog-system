@@ -49,4 +49,11 @@ class UserController
             echo 'Você não tem permissão para editar usuários';
         }
     }
+
+    public function delete($id){
+        user::delete($id);
+        header('location: index.php?action=list');
+    }
+
 }
+?>
