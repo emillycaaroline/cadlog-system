@@ -16,17 +16,17 @@
 
 ## 📋 Descrição 
 
-Este projeto foi desenvolvido em sala na disciplina de `Programação Web II` no `Colégio Marista Irmão Acácio`. Os arquivos desenvolvidos em PHP apresentam uma tela de cadastro e de login, onde na de login é possivel escolher tres tipos de usuários Admin, Gestor e colaborador onde vão ser levados para uma pagina parecida mas com ações a mais ou a menos.
+Este projeto foi desenvolvido em sala na disciplina de `Programação Web II` no `Colégio Marista Irmão Acácio`. Os arquivos desenvolvidos em PHP apresentam uma tela de cadastro e de login, onde na de login é possivel escolher tres tipos de usuários Admin, Gestor e colaborador onde ao logar serão levados para páginas parecidas mas com função diferentes.
 
 ### 🖇️ Funcionalidades:
-Possuem  três tipos de usuários admin, gestor e Colaborador, onde no Cadastro a pessoa terá como selecionar seu tipo de usuário e terá a liberdade de usabilidade do usuário escolhido.
+Essas páginas servem para manter a organização com os usuários cadastrado e possui três tipos de usuários admin, gestor e Colaborador, onde no Cadastro a pessoa terá como selecionar seu tipo de usuário e terá a liberdade de usabilidade do usuário escolhido.
 
 
 ### Admin: 
-Ao entrar na conta de admin o usuário podera vetodos os usuários cadastrados no banco de dados, tambem podera editar e excluir.
+Ao entrar na conta de admin o usuário podera ver todos os usuários cadastrados no banco de dados e podera editar e excluir eles.
 
 ### Gestor:
-O usuário gestor pode apenas vizualizar e editar os usuários cadastrados no banco de dados.
+O usuário gestor irá ver os usuários cadastrados e poderá edita-los.
 
 ### Colaborador:
 O colaborador apenas irá apenas se cadastrar, não consegue ver os usuários, excluir e nem editar.
@@ -44,7 +44,7 @@ O código para o banco de dados esta na pasta [database.sql](https://github.com/
 
 ## 👀 Visual do Site
 **Tela de Login**  
-Utilizada para usuários que ja possui cadastro, onde só com email e login ja entra:  
+Utilizada para usuários que já possui cadastro, onde só com email e login ja entra:  
 <img src="img/TelaLogin.png" alt="Imagem da páginade login" width="500"/><br>
  
 **Tela de Cadastro**  
@@ -60,11 +60,12 @@ Essa é a tela inicial do Admin e será parecida para gestor:
 <img src="img/TelaInicial.png" alt="Imagem da página inicial" width="500"/><br>
 
 **Lista de Usuário**  
-Essa lista de usuário apareça apenas para admin e gestor.  
-<img src="img/ListaUsuario.png" alt="Imagem Lista de Usuário" width="500"/><br>
+Essa lista de usuário aparece apenas para admin e gestor, porem para o gestor não tem a opção de excluir.  
+<img src="img/telaUsuario.png" alt="Imagem Lista de Usuário" width="500"/><br>
 
-## Funcionalidades
-- Manter a organização com os usuários cadastrados.
+**Tela de Usuário**  
+Essa tela para edição de usuário e pode ser acessada apenas pelos usuários admin e gestor.  
+<img src="img/editarUsuario.png" alt="Imagem Lista de Usuário" width="500"/><br>
 
 
 ## Oque foi desenvolvido em CSS
