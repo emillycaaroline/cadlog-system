@@ -95,16 +95,23 @@
 
         /* link de cadastro */
         a {
-            display: block;
-            margin-top: 20px;
-            color: #a564e9;
-            transition: color 0.3s;
-            text-align: center;
+            margin-left: 100px;
+            width: 100%;
+            padding: 10px;
+            background-color: #be7afd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            text-decoration: none;
         }
 
         /* Mudando a cor do link qnd passar o mouse */
         a:hover {
-            color: black;
+            background-color: #a564e9;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
         }
 
         h2 {
@@ -135,7 +142,7 @@
                 <option value="colaborador" <?= $user['perfil'] == 'colaborador' ? 'selected' : '' ?> >Colaborador</option>
             </select><br><br>
 
-            <button type="submit" class="btn">Salvar</button>
+            <button type="submit" class="btn">Salvar</button><br><br><br>
         </form>
         <a href="index.php?action=list" class="back-link">Voltar para Lista de Usuários</a>
     </div>
